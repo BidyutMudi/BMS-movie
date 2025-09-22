@@ -1,30 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie 1 - BMS Studio</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        header {
+            background-color: #ff6f91;
+            color: white;
+            padding: 20px 0;
+        }
+        h1 { margin: 0; }
+        main { padding: 20px; }
+        .movie-player {
+            margin: 30px auto;
+            max-width: 800px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            background-color: white;
+        }
+        iframe {
+            width: 100%;
+            height: 480px;
+            border: none;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Movie 1 🎬</h1>
         <p>BMS Studio | Legal Free Movies</p>
     </header>
-
     <main>
         <div class="movie-player">
-            <p>Click the button below to watch or download the movie:</p>
-            <a href="https://toffeeshare.com/c/tTlGf8KhQh" target="_blank" class="watch-btn">
-                Watch / Download Movie 1
-            </a>
+            <iframe src="https://drive.google.com/file/d/1dSwmdla5BTvd6YYHTIdTOdsYB6spDc6V/preview" 
+                    allow="autoplay; encrypted-media" 
+                    allowfullscreen>
+            </iframe>
         </div>
     </main>
-
     <footer>
         <p>© 2025 BMS Studio | Legal Free Movies</p>
     </footer>
 </body>
 </html>
+
+
 
 
