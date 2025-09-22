@@ -290,3 +290,41 @@ video {
 .movie-gallery .movie-card:first-child {
     width: 300px;   /* Bigger card */
 }
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #ff6f91;
+    color: white;
+    padding: 20px 0;
+}
+
+.movie-player {
+    margin: 50px auto;
+    max-width: 600px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.watch-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.watch-btn:hover {
+    background-color: #0056b3;
+}
