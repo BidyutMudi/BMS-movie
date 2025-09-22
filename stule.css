@@ -1,0 +1,292 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: #ff6f91;
+    color: white;
+}
+
+.movie-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.movie-card {
+    width: 200px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+}
+
+.movie-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.player {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+video {
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #ff6f91;
+    color: white;
+    margin-top: 20px;
+}
+/* Player Section */
+.player {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+video {
+    width: 100%;         /* Full width on mobile */
+    max-width: 800px;    /* Max width on desktop */
+    height: auto;        /* Maintain aspect ratio */
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+/* Fullscreen-friendly */
+@media (orientation: landscape) {
+    video {
+        width: 100vw;   /* Full viewport width in landscape */
+        height: 100vh;  /* Full viewport height */
+        border-radius: 0;
+    }
+}
+
+.back-btn {
+    text-decoration: none;
+    color: white;
+    background: #ff6f91;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.movie-card {
+    width: 220px;
+    cursor: pointer;
+    margin: 10px;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+}
+
+.thumb-container {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.thumb-container img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.thumb-container:hover img {
+    transform: scale(1.05);
+}
+
+/* Duration label like YouTube */
+.duration {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    padding: 2px 5px;
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+/* Movie title below thumbnail */
+.movie-card h3 {
+    margin: 8px 0 0 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #222;
+}
+.about {
+    background: #fce4ec; /* light pink background */
+    padding: 40px 20px;
+    color: #222;
+}
+
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+    line-height: 1.8;
+}
+
+.about h2 {
+    font-size: 28px;
+    color: #ff6f91;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.about {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.about h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.about p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.about a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.about a:hover {
+    text-decoration: underline;
+}
+.projects {
+    background-color: #f9f9f9;
+    padding: 30px 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.project-card {
+    margin-bottom: 20px;
+}
+
+.project-card h3 {
+    color: #ff6f91;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.project-card p {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.project-card a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}
+
+.about-founder {
+    background-color: #ffe0e9;
+    padding: 25px 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+/* General Movie Card Styling */
+.movie-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.movie-card {
+    width: 200px; /* Normal size for other movies */
+    cursor: pointer;
+    text-align: center;
+}
+
+.movie-card h3 {
+    margin: 8px 0 0 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Thumbnail Container */
+.thumb-container {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.thumb-container img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+/* Hover Zoom */
+.thumb-container:hover img {
+    transform: scale(1.05);
+}
+
+/* Duration Label */
+.duration {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    padding: 2px 5px;
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+/* ------------------------ */
+/* Movie 1 Special Bigger Thumbnail */
+.movie-gallery .movie-card:first-child .thumb-container img {
+    height: 250px;  /* Bigger height */
+    width: 100%;    /* Full width of its card */
+    object-fit: cover;
+}
+
+/* Optional: Increase Movie 1 Card Width */
+.movie-gallery .movie-card:first-child {
+    width: 300px;   /* Bigger card */
+}
